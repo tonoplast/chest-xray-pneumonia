@@ -10,6 +10,8 @@ class TrainingConfig(BaseModel):
     epochs: int = 10
     learning_rate: float = 1e-3
     seed: int = 1337
+    weight_decay: float = 1e-4
+    model: str = 'cnn'
     
 class Config(BaseModel):
     data: DataConfig = DataConfig()
