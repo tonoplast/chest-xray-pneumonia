@@ -1,2 +1,4 @@
 uv.lock
 .python-version
+*.pyc
+*.egg-info

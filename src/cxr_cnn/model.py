@@ -28,7 +28,8 @@ class ConvBlock(nn.Module):
 class PneumoniaCNN(nn.Module):
     ''' simple cnn for binary peumonia classification '''
     
-    def __init__(self, image_size: int = 64) -> None:
+    # def __init__(self, image_size: int = 64) -> None:
+    def __init__(self) -> None:
         super().__init__()
         
         self.features = nn.Sequential( # [B,   1, 64, 64]
